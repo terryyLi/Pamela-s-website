@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="TerryLi">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="TerryLi professional website">
+    <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>
+
+    <title>whatseveryonesaying</title>
+</head>
+
+<body>
+    <!-- container -->
+    <div id="container">
+        <!-- top row information -->
+        <div id="top_row">
+            <!-- header tag -->
+            <header>
+                <img src="images/pamelaslogo.png" alt="pamelaslogo">
+                <!-- navigation bar -->
+                <nav>
+                    <a href="index.html">Home</a> 
+                    <a href="orderonline.html">Order Online</a> 
+                    <a href="menu.html">Menu</a> 
+                    <a href="locations.html">Locations & Hours</a> 
+                    <a class="selected" href="whatseveryonesaying.html">What's everyone saying?</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </header>
+            <div id="bgimg"></div>
+        </div>
+        <!-- an order button -->
+        <button id="orderbutton" onclick="window.open('orderonline.html');">Click Here to Order Online</button>
+
+        <!-- main content -->
+        <div id="content">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Yelp Review</a></li>
+                    <li><a href="#tabs-2">Trip Advisor Review</a></li>
+                    <li><a href="#tabs-3">Restaurantji Review</a></li>
+                </ul>
+
+                <div id="tabs-1">
+                    <p></p>
+                    <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelpreview.png" alt="yelp review"></a>
+                    <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3?start=10" target="_blank"><img src="images/yelp2.png" alt="yelp review"></a>
+                    <p></p>
+                </div>
+
+                <div id="tabs-2">
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-Pamela_s_Diner-Pittsburgh_Pennsylvania.html" target="_blank"><img src="images/trip1.png" alt="trip advisor review"></a>
+                    <a href="https://www.tripadvisor.com/Restaurant_Review-g53449-d3599818-Reviews-or45-Pamela_s_Diner-Pittsburgh_Pennsylvania.html" target="_blank"><img src="images/trip2.png" alt="trip advisor review"></a>
+                </div>
+
+                <div id="tabs-3">
+                    <a href="https://www.restaurantji.com/pa/pittsburgh/pamelas-diner-2/comments/" target="_blank"><img src="images/resji2.png" alt="restaurantji review"></a>
+                    <a href="https://www.restaurantji.com/pa/pittsburgh/pamelas-diner-2/comments/" target="_blank"><img src="images/resji1.png" alt="restaurantji review"></a>
+                </div>
+            </div>
+    
+
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div id="socialmedia">
+                <a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><img src="images/ins.png" alt="Instagram Icon"></a>
+                <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.youtube.com/watch?v=Rb0Dw2t-nTE" target="_blank"><img src="images/youtube.png" alt="Youtube Icon"></a>
+                <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Icon"></a>
+            </div>
+            <div id="contact">
+                &copy; 2021 Pamela's Diner <sup>TM</sup>
+                3703 Forbes Ave, Pittsburge, PA 15213<br/>
+                412-683-1003
+                <a href="mailto:pam@pamelasdiner.com" target="_blank">pam@pamelasdiner.com</a><br/>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs({
+                event: "mouseover"
+            });
+        });
+    </script>
+    <script src="js/jquery.lightbox.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

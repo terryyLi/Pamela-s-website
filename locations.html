@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="TerryLi">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="TerryLi professional website">
+    <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+
+    <title>Locations & Hours</title>
+</head>
+
+<body>
+    <!-- container -->
+    <div id="container">
+        <!-- top row information -->
+        <div id="top_row">
+            <!-- header tag -->
+            <header>
+                <img src="images/pamelaslogo.png" alt="pamelaslogo">
+                <!-- navigation bar -->
+                <nav>
+                    <a href="index.html">Home</a> 
+                    <a href="orderonline.html">Order Online</a> 
+                    <a href="menu.html">Menu</a> 
+                    <a class="selected" href="locations.html">Locations & Hours</a> 
+                    <a href="whatseveryonesaying.html">What's everyone saying?</a> 
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </header>
+            <div id="bgimg"></div>
+        </div>
+        <!-- an order button -->
+        <button id="orderbutton" onclick="window.open('orderonline.html');">Click Here to Order Online</button>
+        <!-- main content -->
+        <div id="content">
+            <h1>Locations & Hours</h1><br/><br/><br/><br/>
+            <div class="l_h">
+                <fieldset>
+                    <legend>Please use the below map to find me.</legend>
+                    <div class="location">
+                        <a href="https://www.google.com/maps/dir//Pamela's+Diner,+60+21st+St,+Pittsburgh,+PA+15222/@40.451934,-79.9836508,15z/data=!3m1!5s0x8834f3dd216e690b:0x39e2ae7d3493f231!4m8!4m7!1m0!1m5!1m1!1s0x8834f3dcdf678413:0x2b6723dae7142a78!2m2!1d-79.9836508!2d40.451934" target="_blank"><h2>Pamela's Diner Strip District, 60 21st St, Pittsburgh, PA 15222</h2></a>
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.0524733356565!2d-79.98584578467853!3d40.451975561419275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f3dd213c09a7%3A0xd7eccb86f1cd2b60!2s60%2021st%20St%2C%20Pittsburgh%2C%20PA%2015222!5e0!3m2!1sen!2sus!4v1648154604753!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                </fieldset>
+            </div>
+            <br/><br/><br/><br/>
+            <fieldset>
+                <legend>Hours of Operation</legend>
+                <div id="ohtable">
+                    <table>
+                        <tr>
+                          <th>Monday</th>
+                          <th>Tuesday</th>
+                          <th>Wednesday</th>
+                          <th>Thursday</th>
+                          <th>Friday</th>
+                          <th>Saturday</th>
+                          <th>Sunday</th>
+                        </tr>
+                        <tr>
+                            <td>Closed</td>
+                            <td>Closed</td>
+                            <td>10AM-2PM</td>
+                            <td>10AM-2PM</td>
+                            <td>8AM-4PM</td>
+                            <td>8AM-4PM</td>
+                            <td>8AM-4PM</td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+    
+        </div>
+
+
+        <!-- footer -->
+        <footer>
+            <div id="socialmedia">
+                <a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><img src="images/ins.png" alt="Instagram Icon"></a>
+                <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.youtube.com/watch?v=Rb0Dw2t-nTE" target="_blank"><img src="images/youtube.png" alt="Youtube Icon"></a>
+                <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Icon"></a>
+            </div>
+            <div id="contact">
+                &copy; 2021 Pamela's Diner <sup>TM</sup>
+                3703 Forbes Ave, Pittsburge, PA 15213<br/>
+                412-683-1003
+                <a href="mailto:pam@pamelasdiner.com" target="_blank">pam@pamelasdiner.com</a><br/>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

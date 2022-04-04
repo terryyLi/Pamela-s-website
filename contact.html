@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="TerryLi">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+    <meta name="description" content="TerryLi professional website">
+    <link rel="stylesheet" media="all" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- container -->
+    <div id="container">
+        <!-- top row information -->
+        <div id="top_row">
+            <!-- header tag -->
+            <header>
+                <img src="images/pamelaslogo.png" alt="pamelaslogo">
+                <!-- navigation bar -->
+                <nav>
+                    <a href="index.html">Home</a> 
+                    <a href="orderonline.html">Order Online</a> 
+                    <a href="menu.html">Menu</a> 
+                    <a href="locations.html">Locations & Hours</a> 
+                    <a href="whatseveryonesaying.html">What's everyone saying?</a> 
+                    <a class="selected" href="contact.html">Contact</a>
+                </nav>
+            </header>
+            <div id="bgimg"></div>
+        </div>
+        <!-- an order button -->
+        <button id="orderbutton" onclick="window.open('orderonline.html');">Click Here to Order Online</button>
+        <!-- main content -->
+        <div id="content">
+            <h3>Contact</h3>
+            <form onsubmit="return validate()" action="mailto:pam@pamelasdiner.com" method="post" enctype="text/plain">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <div id="contacttable">
+                        <table>
+                            <tr>
+                                <th>Address:</th>
+                                <td>3703 Forbes Ave, Pittsburge, PA 15213</td>
+                            </tr>
+                            <tr>
+                                <th>Phone Number</th>
+                                <td>412-683-1003</td>
+                            </tr>
+                            <tr>
+                                <th>Email Address</th>
+                                <td><a href="mailto:pam@pamelasdiner.com" target="_blank">pam@pamelasdiner.com</a></td>
+                            </tr>
+                            <tr>
+                                <th>Website</th>
+                                <td><a href="https://www.pamelasdiner.com/" target="_blank">https://www.pamelasdiner.com/</a></td>
+                            </tr>
+                        </table>
+                        <img src="images/incline.jpeg" alt="incline">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Hours of Operation</legend>
+                    <div id="ohtable">
+                        <table>
+                            <!-- <tr>
+                                <th colspan="4">Course Projects</th>
+                            </tr> -->
+                            <tr>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                            <th>Sunday</th>
+                            </tr>
+                            <tr>
+                                <td>Closed</td>
+                                <td>Closed</td>
+                                <td>10AM-2PM</td>
+                                <td>10AM-2PM</td>
+                                <td>8AM-4PM</td>
+                                <td>8AM-4PM</td>
+                                <td>8AM-4PM</td>
+                            </tr>
+                        </table>
+                    </div>
+                </fieldset>
+                <h3>Please use the below form to join our mailing list.</h3>
+                <fieldset>
+                    <legend>Let's stay in touch</legend>
+                    <label for="name">Name (required):</label><br/>
+                    <input type="text" id="name" name="name" size="20" maxlength="250" required><br/><br/>
+                    
+                    <label for="zip">Your zip code (optional):</label><br/>
+                    <input type="text" id="zip" name="zip" value="" size="20" maxlength="5"><br/><br/>
+
+                    <label for="emaimbox">Please provide your email address (required):</label><br/>
+                    <input type="email" id="emaimbox" name="emaimbox" placeholder="abc@defg.com" size="20" maxlength="100" required><br/><br/>
+
+                    <label for="ckb">Please indicate if you want to receive updates via email (optional):</label><br/>
+                    <input type="checkbox" id="ckb" name="ckb">
+                    <label for="ckb">Yes, Please update me!</label><br/><br/>
+                    <input type="submit" id="submit" name="btnimage">
+                </fieldset>
+                
+            </form>
+            
+        </div>
+
+        <!-- footer -->
+        <footer>
+            <div id="socialmedia">
+                <a href="https://www.instagram.com/pamelasdiner/?hl=en" target="_blank"><img src="images/ins.png" alt="Instagram Icon"></a>
+                <a href="https://www.facebook.com/pamelasdiner/" target="_blank"><img src="images/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.youtube.com/watch?v=Rb0Dw2t-nTE" target="_blank"><img src="images/youtube.png" alt="Youtube Icon"></a>
+                <a href="https://www.yelp.com/biz/p-and-gs-pamelas-diner-pittsburgh-3" target="_blank"><img src="images/yelp.png" alt="Yelp Icon"></a>
+            </div>
+            <div id="contact">
+                &copy; 2021 Pamela's Diner <sup>TM</sup>
+                3703 Forbes Ave, Pittsburge, PA 15213<br/>
+                412-683-1003
+                <a href="mailto:pam@pamelasdiner.com" target="_blank">pam@pamelasdiner.com</a><br/>
+            </div>
+        </footer>
+    </div>
+    <script src="js/jquery-3.6.0.min.js" ></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+    
+</body>
+</html>
